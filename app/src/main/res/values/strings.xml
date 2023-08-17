@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">TstPDmo</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="check_internet">\"আপনার ইন্টারনেট সংযোগ পরীক্ষা করুন \"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="otp_first_heading">আপনার মোবাইলে ৬ সংখ্যার একটি কোড পাঠানো হয়েছে। ভেরিফিকেশনের জন্য দয়াকরে কোডটি দিন</string>
+    <string name="code_expires_in">পুনরায় কোড পাঠান</string>
+    <string name="continue_text">ভেরিফাই করুন</string>
+    <string name="get_the_code">ভেরিফিকেশন কোড পান নি</string>
+    <string name="resend_code">
+        <u>পুনরায় কোড পাঠান</u>
+    </string>
+    <string name="enter_reg_msg">দয়াকরে আপনার নতুন  মোবাইল নম্বরটি দিন, আমরা ৬ সংখ্যার একটি ভেরিফিকেশন কোড পাঠাব</string>
+    <string name="permission">
+        3.1. Internet
+3.2. Access Internet State
+3.3. External Storage
+3.4. Access Wifi State
+3.5. Google Billing
+3.6. Receive Boot Completed
+3.7. Wake Lock
+    </string>
+
+    <string name="expandable_text">
+        We Sanchhaya Education Pvt. Ltd., are registered and headquartered
+        at BC 227, 2nd Floor, Matrix Business Tower, B4, Sector 132, Noida, UP-201301, hereinafter
+        referred to as GeeksforGeeks. We also offer paid Courses managed by Sanchhaya Classes Pvt. Ltd.
+        with registered office address B-142, Vishwash Park, Uttam Nagar, New Delhi, North Delhi, Delhi, India, 110059.
+        At GeeksforGeeks, we value your trust and  respect your privacy. This privacy statement (“Privacy Statement”)
+        applies to the treatment of personally identifiable information submitted by, or otherwise obtained from,
+        you in connection with the associated application (“Application”). The Application is
+        provided by GeeksforGeeks (and may be provided by Geeksforgeeks on behalf
+        of a GeeksforGeeks licensor or partner (“Application Partner”).
+        By using or otherwise accessing the Application, you acknowledge that you accept the practices
+        and policies outlined in this Privacy Statement.
+    </string>
+    <string name="description">
+        মার্কিন সিকিউরিটিজ অ্যান্ড এক্সচেঞ্জ কমিশনে মাইক্রোসফ্টের
+        ফাইলিং বলেছে, কাটব্যাকের ফলে তাদের পরবর্তী ফলাফল ঘোষণায় ১.২ বিলিয়ন ডলার চার্জ করা হবে।
+        কর্মীদের উদ্দেশ্যে একটি নোটে বলা হয়, ‘আমরা যেমন মহামারি চলাকালীন গ্রাহকদের তাদের ডিজিটাল ব্যয়কে
+        প্রভাবিত করতে দেখেছি, এখন তাদের ডিজিটাল খরচ কম করে আরও বেশি করার জন্য অপ্টিমাইজ করতে দেখছি।’
+        নিউজ সাইট ‘অ্যাক্সিওস’ অনুসারে, কোভিডকালে প্রযুক্তি ব্যবসা ব্যাপকভাবে বেড়ে যাওয়ায় অনেক কর্মী নিয়োগ
+        করতে হয়েছিল এ খাতের প্রতিষ্ঠানগুলোকে।
+        বয়স বাড়তেই চুল সাদা হওয়াটা  স্বাভাবিক হলেও কমবয়সে চুল পেকে যাওয়ার কারণ কিন্তু বিপজ্জনক। মূলত ভুল জীবনধারা ও বদভ্যাসের কারণেই অকালে চুল পেকে যায়।  বিশেষজ্ঞরা অকালে  চুল পেকে যাওয়ার কিছু কারণ দেখিয়েছেন:
+        মানসিক চাপ প্রত্যেকেই কমবেশি মানসিক চাপে ভোগেন। তবে দীর্ঘদিন ধরে মানসিক চাপে ভুগলে স্বাস্থ্যগত বিভিন্ন সমস্যা যেমন- অনিদ্রা, উদ্বেগ, ক্ষুধা পরিবর্তন ইত্যাদি দেখা দেয়।
+   চুলে তেল না দেওয়া
+নিয়মিত তেল ব্যবহার না করলেও কিন্তু চুল অকালে পাকতে শুরু করে। তেল চুলের স্বাস্থ্যের জন্য খুবই উপকারী। নিয়মিত তেল গরম করে মাথার তালুতে ম্যাসাজ করলে চুল ভালো থাকে। চুলে তেল না ব্যবহারের অভ্যাস এখন থেকেই বদলে ফেলুন। না হলে অকালে আপনার চুলও সাদা হয়ে যাবে।
+    </string>
+    <string name="name">নাম<font color="#FF0000">*</font></string>
+    <string name="className">শ্রেণি<font color="#FF0000">*</font></string>
+    <string name="mobile">মোবাইল<font color="#FF0000">*</font></string>
+    <string name="gender">অনুগ্রহ পূর্বক নির্বাচন করুন<font color="#FF0000">*</font></string>
+    <string name="password">পাসওয়ার্ড<font color="#FF0000">*</font></string>
+    <string name="conf_pass">কনফার্ম পাসওয়ার্ড<font color="#FF0000">*</font></string>
+</resources>
