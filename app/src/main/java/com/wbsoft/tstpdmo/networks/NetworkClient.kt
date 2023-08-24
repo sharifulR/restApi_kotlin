@@ -19,25 +19,46 @@ class NetworkClient {
 
     @Singleton
     @Provides
-    fun providesRetrofit() : Retrofit {
+    fun providesRetrofitBuilder() : Retrofit.Builder {
         return Retrofit.Builder()
-            //.addConverterFactory(ScalarsConverterFactory.create())
             .addConverterFactory(GsonConverterFactory.create(gson))
             .baseUrl(Constants.BASE_URL)
-            //.client(client)
-            .build()
     }
 
     @Singleton
     @Provides
-    fun providesAuthService(retrofit: Retrofit) : ApiInterface{
-        return retrofit.create(ApiInterface::class.java)
+    fun provideOkHttpClint(authInterceptor: AuthInterceptor) : OkHttpClient{
+        return OkHttpClient.Builder().addInterceptor(authInterceptor).build()
+    }
+
+    @Singleton
+    @Provides
+    fun providesAuthAPI(retrofitBuilder: Retrofit.Builder) : ApiInterface{
+        return retrofitBuilder.build().create(ApiInterface::class.java)
     }
     /*@Singleton
     @Provides
     fun providesProductService(retrofit: Retrofit) : ProductApi{
         return retrofit.create(ProductApi::class.java)
     }*/
+
+    /*@Singleton
+    @Provides
+    fun providesAuthRetrofit(okHttpClient: OkHttpClient) : Retrofit {
+        return Retrofit.Builder()
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .client(okHttpClient)
+            .baseUrl(Constants.BASE_URL)
+            .build()
+    }*/
+
+    @Singleton
+    @Provides
+    fun providesClassApi(retrofitBuilder: Retrofit.Builder, okHttpClient: OkHttpClient):AllClassAPI{
+        return retrofitBuilder
+            .client(okHttpClient)
+            .build().create(AllClassAPI::class.java)
+    }
 
     var gson = GsonBuilder()
         .setLenient()
