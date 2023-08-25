@@ -7,5 +7,5 @@ import retrofit2.http.GET
 
 interface AllClassAPI {
     @GET(Constants.AllClass_ENDPOINT)
-    suspend fun getAllClass(): Response<List<AllClassM>>
+    suspend fun getAllClass(): Response<AllClassM>
 }

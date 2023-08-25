@@ -12,8 +12,8 @@ import javax.inject.Inject
 
 class ClassRepository @Inject constructor(private val classApi:AllClassAPI) {
 
-    private val _classLiveData=MutableLiveData<NetworkResult<List<AllClassM>>>()
-    val classLiveData:LiveData<NetworkResult<List<AllClassM>>>
+    private val _classLiveData=MutableLiveData<NetworkResult<AllClassM>>()
+    val classLiveData:LiveData<NetworkResult<AllClassM>>
         get() = _classLiveData
 
     suspend fun getAllClass(){
@@ -25,6 +25,7 @@ class ClassRepository @Inject constructor(private val classApi:AllClassAPI) {
             _classLiveData.postValue(NetworkResult.Success(response.body()!!))
 
             Log.d(Constraints.TAG, "login: ${response.body()}")
+            Log.d("TAG", "getAllClass: ${response.body()}")
         } else if (response.errorBody() != null) {
             val errorObj = JSONObject(response.errorBody()!!.charStream().readText())
             //_loginResponseLiveData.postValue(NetworkResult.Error(response.message(), response.body()))

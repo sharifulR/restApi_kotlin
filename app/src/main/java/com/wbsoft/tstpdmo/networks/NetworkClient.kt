@@ -22,6 +22,7 @@ class NetworkClient {
     fun providesRetrofitBuilder() : Retrofit.Builder {
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create(gson))
+            .client(client)
             .baseUrl(Constants.BASE_URL)
     }
 

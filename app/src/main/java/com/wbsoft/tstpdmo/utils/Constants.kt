@@ -8,7 +8,7 @@ object Constants {
 
     const val AllClass_ENDPOINT = "api/class"
     const val LOGIN_ENDPOINT = "api/login"
-    const val Subject_ENDPOINT = "api/login"
+    // const val Subject_ENDPOINT = "api/login"
     const val TAG = "UserRepository"
 
 
